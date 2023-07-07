@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express')
 const app = express()
 
@@ -5,4 +6,9 @@ app.get('/', (req, res) => {
     res.send('Hello world!')
 })
 
-app.listen(8080)
+// 404 not found page
+app.get('*', (req, res) => {    
+    res.status(404).send('404 not found')
+})
+
+app.listen(process.env.PORT)
