@@ -18,3 +18,19 @@ What this app will include when released:
 | POST | /places/:id/rant | Create a rant (comment) about a particular place |
 | DELETE | /places/:id/rant/:rantId | Delete a rant (comment) about a particular place |
 | GET | * | 404 page (matches any route not defined above) |
+
+List of places to be included in the app:
+
+| Name | City | State | Cuisines | Pic |
+|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
+| Sitar Indian Cuisine | Chattanooga | TN | North Indian and South Indian |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
