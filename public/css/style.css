@@ -64,6 +64,8 @@ button:hover {
 .form-group {
   max-width: 333px;
   margin: 0 auto;
+  padding: .75rem;
+  font-size: 1.3rem;
 }
 
 .btn {
