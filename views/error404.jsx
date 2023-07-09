@@ -6,7 +6,7 @@ function error404 () {
       <Def>
           <main>
               <h1>404: PAGE NOT FOUND</h1>
-              <p>Uh oh, no food in here!</p>
+              <p>Uh oh, no food out here!</p>
               <img
             src="images/hannah-busing-0BhSKStVtdM-unsplash.jpg"
             alt="a farmhouse tableware set with plates and silver to both sides and napkins, but no food"
