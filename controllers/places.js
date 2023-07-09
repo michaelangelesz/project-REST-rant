@@ -1,5 +1,9 @@
 const router = require("express").Router();
 
+router.get('/new', (req, res) => {
+  res.render('places/new')
+})
+
 router.get("/", (req, res) => {
   let places = [
     {
@@ -8,7 +12,8 @@ router.get("/", (req, res) => {
       city: "Seattle",
       state: "WA",
       cuisines: "Thai, Pan-Asian",
-      pic: "images/kristina-truniak-cDKRNUG4uec-unsplash.jpg",
+      pic: "images/spencer-chow-PF_zcUW_NYU-unsplash.jpg",
+      // https://unsplash.com/photos/PF_zcUW_NYU
     },
     {
       id: 1,
