@@ -13,7 +13,25 @@ function Def(html) {
         ></link>
         <link rel="stylesheet" href="/css/style.css" />
       </head>
-      <body>{html.children}</body>
+      <body>
+        <div id="root">{html.children}</div>
+        <div className="footer">
+          <div className="container">
+            <span className="my-info">
+              ♦︎♦︎♦︎ Michael M.Weisphal ♦︎{" "}
+              <a href="https://www.linkedin.com/in/michael-m-weisphal/">
+                LinkedIn
+              </a>{" "}
+              ♦︎ <a href="https://github.com/michaelangelesz"> GitHub</a> ♦︎{" "}
+              <a href="https://michaelangelesz.github.io/FSI-Build-a-Portfolio/">
+                Portfolio
+              </a>{" "}
+              ♦︎ <a href="https://www.instagram.com/michaelangelesz/">Insta</a>{" "}
+              ♦︎♦︎♦︎
+            </span>
+          </div>
+        </div>
+      </body>
     </html>
   );
 }
