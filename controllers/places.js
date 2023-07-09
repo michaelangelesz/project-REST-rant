@@ -8,7 +8,7 @@ router.get("/", (req, res) => {
       city: "Seattle",
       state: "WA",
       cuisines: "Thai, Pan-Asian",
-      pic: "http://placekitten.com/250/250",
+      pic: "images/kristina-truniak-cDKRNUG4uec-unsplash.jpg",
     },
     {
       id: 1,
@@ -16,7 +16,8 @@ router.get("/", (req, res) => {
       city: "Phoenix",
       state: "AZ",
       cuisines: "Coffee, Bakery",
-      pic: "http://placekitten.com/250/250",
+      pic: "images/allison-christine-nKzZTrJeM18-unsplash.jpg",
+      // https://unsplash.com/photos/nKzZTrJeM18
     },
   ];
   res.render("places/index", { places });
