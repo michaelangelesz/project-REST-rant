@@ -1,10 +1,17 @@
 # Project REST-Rant
 
-REST-Rant will be an app where users can review restaurants. 
+TBD - SUMMARY
 
-## README Driven Development
-What this app will include when released:
+## Tech Usage
+CSS Framework: Bootstrap
 
+Stack: MongoDB, Express, NodeJS
+
+Server-Side Rendering: JSX
+
+Node Modules: method-override, dotenv, express-react-views
+
+## Routes
 | Method | Path | Purpose |
 |--------------:|:-------------:|:--------------|
 | GET | `/` | Home page |
@@ -19,17 +26,37 @@ What this app will include when released:
 | DELETE | `/places/:id/rant/:rantId` | Delete a rant (comment) about a particular place |
 | GET | `*` | 404 page (matches any route not defined above) |
 
-List of places to be included in the app:
-| Name | City | State | Cuisines | Pic |
-|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
-| Sitar Indian Cuisine | Chattanooga | TN | North Indian and South Indian |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
+## Database
+places
+| Field | Type |
+|:-----|:-----|
+| _id | Object ID |
+| name | String |
+| city | String |
+| state | String |
+| cuisines | String |
+| pic | String |
+
+rants
+| Field | Type |
+|:-----|:-----|
+| _id | Object ID |
+| place_id | ref(places) Object_Id |
+| rant | Boolean |
+| rating | Number |
+| comment | String |
+| reviewer | String |
+
+## Planning
+
+### User Stories
+TBD
+
+### Wireframes
+TBD
+
+## Notes
+Possible bonus ideas:
+- Update for comments
+- Aggregate rating for a place
+- Auto-complete state dropdown
