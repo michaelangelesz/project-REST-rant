@@ -5,14 +5,16 @@ function home() {
   return (
     <Def>
       <main>
-        <h1>REST-Rant</h1>
-        <div>
         <a href="/places">
-          <img
-            src="images/heather-wilde-1ueCS0gHo_M-unsplash.jpg"
-            alt="a steaming hot pizza, with cheese and toppings, photographed from the side"
-            className="width-image"
-          />
+          <h1>REST-Rant</h1>
+        </a>
+        <div>
+          <a href="/places">
+            <img
+              src="images/heather-wilde-1ueCS0gHo_M-unsplash.jpg"
+              alt="a steaming hot pizza, with cheese and toppings, photographed from the side"
+              className="width-image"
+            />
           </a>
           Photo by{" "}
           <a href="https://unsplash.com/@heather_wilde?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
