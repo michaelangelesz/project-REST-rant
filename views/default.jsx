@@ -31,7 +31,7 @@ function Def(html) {
         <div className="footer">
           <div className="container">
             <span className="my-info">
-              ♦︎♦︎♦︎ Michael M.Weisphal ♦︎{" "}
+              ♦ Mike W ♦︎{" "}
               <a href="https://www.linkedin.com/in/michael-m-weisphal/">
                 LinkedIn
               </a>{" "}
@@ -40,7 +40,7 @@ function Def(html) {
                 Portfolio
               </a>{" "}
               ♦︎ <a href="https://www.instagram.com/michaelangelesz/">Insta</a>{" "}
-              ♦︎♦︎♦︎
+              ♦
             </span>
           </div>
         </div>
