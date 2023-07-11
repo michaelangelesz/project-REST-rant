@@ -3,7 +3,7 @@ const Def = require("./default");
 
 function home() {
   return (
-    <Def>
+    <Def title="REST-Rant Home">
       <main>
         <a href="/places">
           <h1>REST-Rant</h1>

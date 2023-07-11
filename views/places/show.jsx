@@ -3,7 +3,7 @@ const Def = require('../default')
 
 function show (data) {
     return (
-        <Def>
+        <Def title='Restaurant Details'>
           <main>
             <h1>{ data.place.name }</h1>
           </main>
