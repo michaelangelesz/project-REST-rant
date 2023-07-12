@@ -19,15 +19,15 @@ function show(data) {
           <div className="col-md-8">
             <h1>{data.place.name}</h1>
             <h2 className="mb-4">Rating</h2>
-            <p>Not Rated </p>
+            <p className="show">Not Rated </p>
             <h2 className="mb-4">Description</h2>
-            <p>
+            <p className="show">
               Located in {data.place.city}, {data.place.state} and serving{" "}
               {data.place.cuisines}.
             </p>
           </div>
         </div>
-        <div>
+        <div className="edits">
           <a
             href={`/places/${data.id}/edit`}
             className="btn btn-warning" style={{ display: "inline-block" }}>

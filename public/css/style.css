@@ -135,15 +135,12 @@ button:hover {
 
 .btn-warning, .btn-danger {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-}
-
-.btn-danger {
-  background-color: rgb(204, 12, 12);
+  color: antiquewhite !important;
+  background-color: rgb(144, 118, 118);
 }
 
 .btn-warning:hover, .btn-danger:hover {
-  color: rgb(73, 26, 26);
+  color: rgb(73, 26, 26) !important;
   transition: 0.2s ease-in-out;
 }
 
@@ -191,7 +188,6 @@ body {
 }
 
 p {
-  font-family: proxima-nova, sans-serif;
   color: rgb(73, 26, 26);
   font-weight: normal;
 }
@@ -202,13 +198,20 @@ p {
   font-size: 2.2rem;
 }
 
+.show {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .py-5 {
   background: linear-gradient(to top, rgb(73, 26, 26), rgb(73, 26, 26) 99%, rgba(73, 26, 26, 0)) !important;
 }
 
+.edits {
+  margin-top: .3em;
+}
+
 .comments-section {
   height: 88vh;
-  margin-top: 1rem;
 }
 
 .comments-heading {
@@ -230,6 +233,7 @@ p {
 
 .comments {
   color: antiquewhite;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .foot {
