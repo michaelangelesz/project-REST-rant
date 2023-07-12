@@ -1,6 +1,6 @@
 module.exports = [
     {
-      id: 0,
+      id: 1,
       name: "H-Thai-ML",
       city: "Seattle",
       state: "WA",
@@ -9,7 +9,7 @@ module.exports = [
       // https://unsplash.com/photos/PF_zcUW_NYU
     },
     {
-      id: 1,
+      id: 2,
       name: "Coding Cat Cafe",
       city: "Phoenix",
       state: "AZ",

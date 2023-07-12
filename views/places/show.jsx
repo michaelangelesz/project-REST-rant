@@ -27,9 +27,22 @@ function show(data) {
             </p>
           </div>
         </div>
+        <div>
+          <a
+            href={`/places/${data.id}/edit`}
+            className="btn btn-warning" style={{ display: "inline-block" }}>
+            EDIT
+          </a>
+          <form method="POST" action={`/places/${data.id}?_method=DELETE`} style={{ display: "inline-block" }}>
+            <button type="submit" className="btn btn-danger">
+              DELETE
+            </button>
+          </form>
+        </div>
         <section className="comments-section bg-dark text-light py-5">
           <div className="container">
             <h2 className="comments-heading text-center mb-4">Comments</h2>
+            <p className="comments">No comments yet!</p>
             {/* Add comments form and display logic here */}
           </div>
         </section>
