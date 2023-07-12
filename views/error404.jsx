@@ -14,6 +14,7 @@ function error404 () {
           />
           Photo by <a href="https://unsplash.com/@hannahbusing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hannah Busing</a> on <a href="https://unsplash.com/photos/0BhSKStVtdM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
+          <div className="foot"></div>
           </main>
       </Def>
     )

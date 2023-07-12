@@ -32,7 +32,7 @@ function Def(html) {
         <div className="footer">
           <div className="container">
             <span className="my-info">
-              ♦ Mike W ♦︎{" "}
+              ♦ WebDesigns by Mike ♦︎{" "}
               <a href="https://www.linkedin.com/in/michael-m-weisphal/">
                 LinkedIn
               </a>{" "}

@@ -173,3 +173,49 @@ body {
   font-size: 1.025em;
   transition: 0.2s ease-in-out;
 }
+
+p {
+  font-family: Arial, sans-serif;
+  color: rgb(73, 26, 26);
+}
+
+.mb-4 {
+  color: rgb(73, 26, 26);
+  letter-spacing: 0.1rem;
+  font-size: 2.2rem;
+}
+
+.py-5 {
+  background: linear-gradient(to top, rgb(73, 26, 26), rgb(73, 26, 26) 99%, rgba(73, 26, 26, 0)) !important;
+}
+
+.comments-section {
+  height: 88vh;
+  margin-top: 1rem;
+}
+
+.comments-heading {
+  margin-top: 0;
+  color: antiquewhite;
+}
+
+.img-fluid {
+  margin: auto;
+  margin-top: 1rem;
+  width: 80%;
+}
+
+@media (min-width: 768px) {
+  .col-md-4, .col-md-8 {
+    width: 50%;
+  }
+}
+
+.foot {
+  height: 10vh;
+}
+
+.comment-foot {
+  height: 10vh;
+  background-color: rgb(73, 26, 26);
+}
