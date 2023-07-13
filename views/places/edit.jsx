@@ -28,17 +28,37 @@ function edit_form(data) {
                 id="pic"
                 name="pic"
                 pattern="https?://.+"
+                value={data.place.pic}
+                onChange={(event) => {
+                  data.place.pic = event.target.value
+                }}
               />
             </div>
           </div>
           <div className="row">
             <div className="form-group col-sm-6">
               <label htmlFor="city">City</label>
-              <input className="form-control" id="city" name="city" />
+              <input
+                className="form-control"
+                id="city"
+                name="city"
+                value={data.place.city}
+                onChange={(event) => {
+                  data.place.city = event.target.value
+                }}
+              />
             </div>
             <div className="form-group col-sm-6">
               <label htmlFor="state">State</label>
-              <select className="form-control" id="state" name="state">
+              <select
+                className="form-control"
+                id="state"
+                name="state"
+                value={data.place.state}
+                onChange={(event) => {
+                  data.place.state = event.target.value
+                }}
+              >
                 <option value="AL">AL</option>
                 <option value="AK">AK</option>
                 <option value="AZ">AZ</option>
@@ -98,6 +118,10 @@ function edit_form(data) {
               className="form-control"
               id="cuisines"
               name="cuisines"
+              value={data.place.cuisines}
+              onChange={(event) => {
+                data.place.cuisines = event.target.value
+              }}
               required
             />
           </div>
