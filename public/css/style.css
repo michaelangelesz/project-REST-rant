@@ -149,6 +149,10 @@ body {
   height: 100%;
 }
 
+.row {
+  margin: auto;
+}
+
 #root {
   min-height: 100%;
   position: relative;
