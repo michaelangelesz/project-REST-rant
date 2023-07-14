@@ -11,11 +11,11 @@ function new_form() {
         <h1>Add a New Place</h1>
         <form method="POST" action="/places">
           <div className="row">
-            <div className="form-group col-sm-6">
+            <div className="form-group col-md-8">
               <label htmlFor="name">Place Name</label>
               <input className="form-control" id="name" name="name" required />
             </div>
-            <div className="form-group col-sm-6">
+            <div className="form-group col-md-8">
               <label htmlFor="pic">Place Picture</label>
               <input
                 className="form-control"
@@ -26,11 +26,11 @@ function new_form() {
             </div>
           </div>
           <div className="row">
-            <div className="form-group col-sm-6">
+            <div className="form-group col-md-8">
               <label htmlFor="city">City</label>
               <input className="form-control" id="city" name="city" />
             </div>
-            <div className="form-group col-sm-6">
+            <div className="form-group col-md-8">
               <label htmlFor="state">State</label>
               <select className="form-control" id="state" name="state">
                 <option value="AL">AL</option>
@@ -86,14 +86,31 @@ function new_form() {
               </select>
             </div>
           </div>
-          <div className="form-group">
-            <label htmlFor="cuisines">Cuisines</label>
-            <input
-              className="form-control"
-              id="cuisines"
-              name="cuisines"
-              required
-            />
+          <div className="row">
+            <div className="form-group col-md-8">
+              <div className="form-group">
+                <label htmlFor="cuisines">Cuisines</label>
+                <input
+                  className="form-control"
+                  id="cuisines"
+                  name="cuisines"
+                  required
+                />
+              </div>
+            </div>
+            <div className="form-group col-md-8">
+              <div className="form-group">
+                <label htmlFor="established">Established</label>
+                <input
+                  className="form-control"
+                  id="established"
+                  name="established"
+                  required
+                  pattern="(19|20)\d{2}"
+                  title="Please enter a valid year beginning with either 19 or 20"
+                />
+              </div>
+            </div>
           </div>
           <input className="btn btn-primary" type="submit" value="Add Place" />
         </form>

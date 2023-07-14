@@ -23,7 +23,8 @@ function show(data) {
             <h2 className="mb-4">Description</h2>
             <p className="show">
               Located in {data.place.city}, {data.place.state} and serving{" "}
-              {data.place.cuisines}.
+              {data.place.cuisines}.</p> 
+              <p className="show">{data.place.name} was established in {data.place.established}.
             </p>
           </div>
         </div>

@@ -16,14 +16,16 @@ function home() {
               className="width-image"
             />
           </a>
-          Photo by{" "}
-          <a href="https://unsplash.com/@heather_wilde?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-            Heather Wilde
-          </a>{" "}
-          on{" "}
-          <a href="https://unsplash.com/s/photos/vegetarian-pizza?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-            Unsplash
-          </a>
+          <div className="photographer">
+            Photo by{" "}
+            <a href="https://unsplash.com/@heather_wilde?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Heather Wilde
+            </a>{" "}
+            on{" "}
+            <a href="https://unsplash.com/s/photos/vegetarian-pizza?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Unsplash
+            </a>
+          </div>
         </div>
         <a href="/places">
           <button className="btn-primary">Let's eat!!!</button>

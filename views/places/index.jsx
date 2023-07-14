@@ -13,6 +13,7 @@ function index(data) {
         <p className="text-center">
           {place.city}, {place.state}
         </p>
+        <p className="text-center">Established in {place.established}</p>
       </div>
     )
   })
@@ -21,6 +22,9 @@ function index(data) {
       <main>
         <h1>Places to Rant or Rave About</h1>
         <div className="row">{placesFormatted}</div>
+        <a href="/places/new">
+          <button className="btn btn-primary">Add a new place</button>
+        </a>
         <div className="foot"></div>
       </main>
     </Def>

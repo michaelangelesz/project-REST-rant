@@ -47,6 +47,9 @@ router.post('/', (req, res) => {
   if (!req.body.state) {
     req.body.state = 'USA'
   }
+  if (!req.body.established) {
+    req.body.established = '2099'
+  }
   places.push(req.body)
   res.redirect('./places')
 })
@@ -71,7 +74,9 @@ router.put('/:id', (req, res) => {
       if (!req.body.state) {
           req.body.state = 'USA'
       }
-
+      if (!req.body.established) {
+        req.body.established = '2099'
+      }
       // Save the new data into places[id]
       places[id] = req.body
       res.redirect(`/places/${id}`)
