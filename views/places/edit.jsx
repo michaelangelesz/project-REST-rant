@@ -3,13 +3,13 @@ const Def = require("../default.jsx")
 
 function edit_form(data) {
   return (
-    <Def title="Make an Edit">
+    <Def title="Edit Restaurant">
       <main>
         <h1>Edit Restaurant</h1>
         <form method="POST" action={`/places/${data.place.id}?_method=PUT`}>
           <div className="row">
             <div className="form-group col-md-8">
-              <label htmlFor="name">Place Name</label>
+              <label htmlFor="name">Restaurant Name</label>
               <input
                 className="form-control"
                 id="name"
@@ -33,6 +33,40 @@ function edit_form(data) {
                   data.place.pic = event.target.value
                 }}
               />
+            </div>
+          </div>
+          <div className="row">
+            <div className="form-group col-md-8">
+              <div className="form-group">
+                <label htmlFor="cuisines">Cuisines</label>
+                <input
+                  className="form-control"
+                  id="cuisines"
+                  name="cuisines"
+                  value={data.place.cuisines}
+                  onChange={(event) => {
+                    data.place.cuisines = event.target.value
+                  }}
+                  required
+                />
+              </div>
+            </div>
+            <div className="form-group col-md-8">
+              <div className="form-group">
+                <label htmlFor="established">Established</label>
+                <input
+                  className="form-control"
+                  id="established"
+                  name="established"
+                  pattern="(19|20)\d{2}"
+                  title="Please enter a valid year beginning with either 19 or 20"
+                  value={data.place.established}
+                  onChange={(event) => {
+                    data.place.established = event.target.value
+                  }}
+                  required
+                />
+              </div>
             </div>
           </div>
           <div className="row">
@@ -112,44 +146,10 @@ function edit_form(data) {
               </select>
             </div>
           </div>
-          <div className="row">
-            <div className="form-group col-md-8">
-              <div className="form-group">
-                <label htmlFor="cuisines">Cuisines</label>
-                <input
-                  className="form-control"
-                  id="cuisines"
-                  name="cuisines"
-                  value={data.place.cuisines}
-                  onChange={(event) => {
-                    data.place.cuisines = event.target.value
-                  }}
-                  required
-                />
-              </div>
-            </div>
-            <div className="form-group col-md-8">
-              <div className="form-group">
-                <label htmlFor="established">Established</label>
-                <input
-                  className="form-control"
-                  id="established"
-                  name="established"
-                  pattern="(19|20)\d{2}"
-                  title="Please enter a valid year beginning with either 19 or 20"
-                  value={data.place.established}
-                  onChange={(event) => {
-                    data.place.established = event.target.value
-                  }}
-                  required
-                />
-              </div>
-            </div>
-          </div>
           <input
             className="btn btn-primary"
             type="submit"
-            value="Edit Restaurant"
+            value="✎ Submit"
           />
         </form>
       </main>
