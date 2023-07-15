@@ -7,7 +7,6 @@ module.exports = [
       cuisines: "Thai, Pan-Asian",
       established: "2019",
       pic: "images/spencer-chow-PF_zcUW_NYU-unsplash.jpg",
-      // https://unsplash.com/photos/PF_zcUW_NYU
     },
     {
       id: 2,
@@ -16,7 +15,6 @@ module.exports = [
       state: "AZ",
       cuisines: "Coffee, Bakery",
       established: "2018",
-      pic: "images/allison-christine-nKzZTrJeM18-unsplash.jpg",
-      // https://unsplash.com/photos/nKzZTrJeM18
+      pic: "images/ben-kolde-FFqNATH27EM-unsplash.jpg",
     },
   ];

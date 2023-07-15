@@ -5,9 +5,14 @@ function home() {
   return (
     <Def title="REST-Rant Home">
       <main>
-        <a href="/places">
-          <h1>REST-Rant</h1>
-        </a>
+        <h1>
+          <a
+            href="/places"
+            style={{ color: "inherit", textDecoration: "none" }}
+          >
+            REST-Rant
+          </a>
+        </h1>
         <div>
           <a href="/places">
             <img
