@@ -13,7 +13,7 @@ body {
   padding-left: 10px;
 }
 
-.navbar, .navbar-expand-sm {
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -27,7 +27,7 @@ body {
 }
 
 .navbar-nav {
-  margin-left: -2em;
+  margin-left: -1.1em;
   margin-right: auto;
 }
 
@@ -43,33 +43,6 @@ body {
   text-decoration: none;
   font-size: 1.13em !important;
   transition: 0.3s ease-in-out !important;
-}
-
-button.navbar-toggler {
-  position: fixed;
-  top: -5px;
-  left: -5px;
-  background-color: rgb(144, 118, 118);
-  border: antiquewhite 1px solid;
-  border-radius: 0.5rem;
-  color: antiquewhite !important;
-  font-size: .6em;
-  transition: 0.3s ease-in-out;
-}
-
-button.navbar-toggler:hover {
-  background-color: antiquewhite;
-  color: rgb(73, 26, 26);
-  transition: 0.3s ease-in-out;
-}
-
-.dropdown-menu {
-  background-color: rgb(73, 26, 26);
-  border: antiquewhite 1px solid;
-  border-radius: 0.5rem;
-  color: antiquewhite !important;
-  font-size: 1.1em;
-  transition: 0.3s ease-in-out;
 }
 
 h1 {

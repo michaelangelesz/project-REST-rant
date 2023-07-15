@@ -15,40 +15,20 @@ function Def(html) {
         <link rel="stylesheet" href="/css/style.css" />
       </head>
       <body>
-        <nav className="navbar navbar-expand-sm">
-          <a class="navbar-brand" href="/places">
-            <img
-              src="/favicons/icons8-salad-64.png"
-              alt=""
-            />
+        <nav className="navbar navbar-expand">
+          <a className="navbar-brand" href="/places">
+            <img src="/favicons/icons8-salad-64.png" alt="" />
           </a>
-          <div className="container-fluid">
-            <div className="navbar-header">
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="navbar-toggler-icon"></span>
-              </button>
-            </div>
-            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div className="navbar-nav">
-                <a className="nav-item nav-link" href="/">
-                  Home
-                </a>
-                <a className="nav-item nav-link" href="/places">
-                  Places
-                </a>
-                <a className="nav-item nav-link" href="/places/new">
-                  Add Place
-                </a>
-              </div>
-            </div>
+          <div className="navbar-nav">
+            <a className="nav-item nav-link" href="/">
+              Home
+            </a>
+            <a className="nav-item nav-link" href="/places">
+              Places
+            </a>
+            <a className="nav-item nav-link" href="/places/new">
+              Add Place
+            </a>
           </div>
         </nav>
         <div id="root">{html.children}</div>
