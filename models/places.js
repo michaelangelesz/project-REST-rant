@@ -6,7 +6,7 @@ module.exports = [
       state: "WA",
       cuisines: "Thai, Pan-Asian",
       established: "2019",
-      pic: "images/spencer-chow-PF_zcUW_NYU-unsplash.jpg",
+      pic: "/images/spencer-chow-PF_zcUW_NYU-unsplash.jpg",
     },
     {
       id: 2,
@@ -15,6 +15,6 @@ module.exports = [
       state: "AZ",
       cuisines: "Coffee, Bakery",
       established: "2018",
-      pic: "images/ben-kolde-FFqNATH27EM-unsplash.jpg",
+      pic: "/images/ben-kolde-FFqNATH27EM-unsplash.jpg",
     },
   ];
