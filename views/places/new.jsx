@@ -5,9 +5,6 @@ function new_form() {
   return (
     <Def title="Add a New Restaurant">
       <main>
-        <head>
-          <link rel="icon" type="image/png" href="favicons/wine.png" />
-        </head>
         <h1>Add a New Restaurant</h1>
           <form method="POST" action="/places" className="form-container">
             <div className="row">
