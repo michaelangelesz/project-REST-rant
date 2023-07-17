@@ -129,7 +129,7 @@ form {
 }
 
 .form-control {
-  font-family: Arial, sans-serif; /* set the font family to Arial */
+  font-family: Arial, sans-serif;
   font-size: 1rem;
   padding: 0.5rem;
   border-radius: 0.25rem;
@@ -145,6 +145,7 @@ form {
 .col-sm-6 {
   margin-top: 1em;
   margin-bottom: 1em;
+  text-align: center !important;
 }
 
 .col-md-8 {

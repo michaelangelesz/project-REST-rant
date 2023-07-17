@@ -6,9 +6,9 @@ function edit_form(data) {
     <Def title="Edit Restaurant">
       <main>
         <h1>Edit Restaurant</h1>
-        <form method="POST" action={`/places/${data.id}?_method=PUT`}>
+        <form method="POST" className="form-container" action={`/places/${data.id}?_method=PUT`}>
           <div className="row">
-            <div className="form-group col-md-8">
+            <div className="form-group col-sm-6 col-md-6 col-lg-4">
               <label htmlFor="name">Restaurant Name</label>
               <input
                 className="form-control"
@@ -21,7 +21,7 @@ function edit_form(data) {
                 required
               />
             </div>
-            <div className="form-group col-md-8">
+            <div className="form-group col-sm-6 col-md-6 col-lg-4">
               <label htmlFor="pic">Place Picture</label>
               <input
                 className="form-control"
@@ -34,9 +34,7 @@ function edit_form(data) {
                 }}
               />
             </div>
-          </div>
-          <div className="row">
-            <div className="form-group col-md-8">
+            <div className="form-group col-sm-6 col-md-6 col-lg-4">
               <div className="form-group">
                 <label htmlFor="cuisines">Cuisines</label>
                 <input
@@ -51,7 +49,7 @@ function edit_form(data) {
                 />
               </div>
             </div>
-            <div className="form-group col-md-8">
+            <div className="form-group col-sm-6 col-md-6 col-lg-4">
               <div className="form-group">
                 <label htmlFor="established">Established</label>
                 <input
@@ -68,9 +66,7 @@ function edit_form(data) {
                 />
               </div>
             </div>
-          </div>
-          <div className="row">
-            <div className="form-group col-md-8">
+            <div className="form-group col-sm-6 col-md-6 col-lg-4">
               <label htmlFor="city">City</label>
               <input
                 className="form-control"
@@ -82,7 +78,7 @@ function edit_form(data) {
                 }}
               />
             </div>
-            <div className="form-group col-md-8">
+            <div className="form-group col-sm-6 col-md-6 col-lg-4">
               <label htmlFor="state">State</label>
               <select
                 className="form-control"
@@ -146,12 +142,9 @@ function edit_form(data) {
               </select>
             </div>
           </div>
-          <input
-            className="btn btn-primary"
-            type="submit"
-            value="✎ Submit"
-          />
+          <input className="btn btn-primary" type="submit" value="✎ Submit" />
         </form>
+        <div className="foot"></div>
       </main>
     </Def>
   )
