@@ -35,15 +35,13 @@ function new_form() {
             </div>
             <div className="form-group col-sm-6 col-md-6 col-lg-4">
               <div className="form-group">
-                <label htmlFor="established">Established</label>
+                <label htmlFor="founded">Established</label>
                 <input
+                  type="number"
                   className="form-control"
-                  id="established"
-                  name="established"
-                  required
-                  pattern="(19|20)\d{2}"
-                  title="Please enter a valid year beginning with either 19 or 20"
-                  placeholder="Year"
+                  id="founded"
+                  name="founded"
+                  defaultValue={new Date().getFullYear()}
                 />
               </div>
             </div>
