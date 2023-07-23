@@ -12,3 +12,4 @@ mongoose.connect(
 
 // shortcut to mongoose.connection object???
 module.exports.Place = require('./places')
+module.exports.Comment = require('./comment')
