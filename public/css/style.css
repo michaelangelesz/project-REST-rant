@@ -45,6 +45,25 @@ body {
   transition: 0.3s ease-in-out !important;
 }
 
+.navbar-toggler {
+  border: none;
+  background: antiquewhite !important;
+  font-size: 80%;
+}
+
+.navbar-toggler:hover {
+  background-color: rgb(144, 118, 118) !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+.navbar-toggler-icon {
+  font-size: 80%;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
 h1 {
   font-size: 3rem;
   text-align: center;
@@ -256,6 +275,18 @@ body {
   transition: 0.2s ease-in-out;
 }
 
+/* Media query for screens with a maximum width of 768 pixels */
+@media (max-width: 768px) {
+  /* Adjust font size of footer text for smaller screens */
+  .sticky-footer {
+    font-size: .7rem;
+  }
+
+  .copyright {
+    font-size: .55rem !important;
+  }
+}
+
 .icons {
   color: antiquewhite !important;
 }
@@ -270,6 +301,12 @@ body {
   color: rgb(73, 26, 26);
   letter-spacing: 0.1rem;
   font-size: 2.2rem;
+}
+
+.places {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.1em;
+  font-size: 1em;
 }
 
 .show {
