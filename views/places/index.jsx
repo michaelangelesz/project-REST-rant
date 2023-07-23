@@ -13,7 +13,7 @@ function index(data) {
         <p className="text-center places">
           {place.city}, {place.state}
         </p>
-        <p className="text-center places">Established in {place.established}</p>
+        <p className="text-center places">Established in {place.founded}</p>
       </div>
     )
   })
