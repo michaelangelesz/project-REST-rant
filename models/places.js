@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 // create a schema (pattern, blueprint) for the data
 const placeSchema = new mongoose.Schema({
   name: { type: String, required: true },
-  pic: String,
+  pic: { type: String, },
   cuisines: { type: String, required: true },
   city: { type: String, default: 'Anytown' },
   state: { type: String, default: 'USA' },
