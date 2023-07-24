@@ -2,6 +2,23 @@ const React = require("react")
 const Def = require("../default")
 
 function show(data) {
+  let comments = (
+    <p className="inactive">No comments yet!</p>
+  )
+  if (data.place.comments.length) {
+    comments = data.place.comments.map(c => {
+      return (
+        <div className="border">
+          <h2 className="rant">{c.rant ? 'Rant! 😡' : 'Rave! 😻'}</h2>
+          <h4>{c.content}</h4>
+          <h3>
+            <stong>- {c.author}</stong>
+          </h3>
+          <h4>Rating: {c.stars}</h4>
+        </div>
+      )
+    })
+  }
   return (
     <Def title="Restaurant Details">
       <main>
@@ -78,8 +95,7 @@ function show(data) {
         <section className="comments-section bg-dark text-light py-5">
           <div className="container">
             <h2 className="comments-heading text-center mb-4">Comments</h2>
-            <p className="comments">No comments yet!</p>
-            {/* Add comments form and display logic here */}
+            {comments}
           </div>
         </section>
         <div className="comment-foot"></div>
