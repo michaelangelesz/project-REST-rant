@@ -2,14 +2,13 @@ const React = require("react")
 const Def = require("../default")
 
 function show(data) {
-  let comments = (
-    <p className="inactive">No comments yet!</p>
-  )
+  let comments = <p className="inactive">No comments yet!</p>
+  let rating = <p className="inactive2">No ratings yet!</p>
   if (data.place.comments.length) {
-    comments = data.place.comments.map(c => {
+    comments = data.place.comments.map((c) => {
       return (
         <div className="border">
-          <h2 className="rant">{c.rant ? 'Rant! 😡' : 'Rave! 😻'}</h2>
+          <h2 className="rant">{c.rant ? "Rant! 😡" : "Rave! 😻"}</h2>
           <h4>{c.content}</h4>
           <h3>
             <stong>- {c.author}</stong>
@@ -44,7 +43,7 @@ function show(data) {
                 </div>
                 <div className="rating col-sm-12 col-md-12 col-lg-6">
                   <h2 className="mb-4">Rating</h2>
-                  <p className="show">Not Rated </p>
+                  {rating}
                 </div>
               </div>
             </div>
@@ -96,6 +95,52 @@ function show(data) {
           <div className="container">
             <h2 className="comments-heading text-center mb-4">Comments</h2>
             {comments}
+            <hr />
+            <br />
+            <h2>Got Your Own Rant or Rave?</h2>
+            <form action={`/places/${data.place.id}/comment`} method="POST">
+              <div className="row">
+                <div className="form-group col-sm-12">
+                  <label htmlFor="content">Comment</label>
+                  <textarea
+                    id="content"
+                    name="content"
+                    className="form-control"
+                  ></textarea>
+                </div>
+              </div>
+              <div className="row">
+                <div className="form-group col-sm-6">
+                  <label htmlFor="author">Author</label>
+                  <input id="author" name="author" className="form-control" />
+                </div>
+                <div className="form-group col-sm-6">
+                  <label htmlFor="stars">Star Rating</label>
+                  <select className="form-control" id="stars" name="stars">
+                    <option value="0">Select a rating</option>
+                    <option value="1">⭐️</option>
+                    <option value="2">⭐️⭐️</option>
+                    <option value="3">⭐️⭐️⭐️</option>
+                    <option value="4">⭐️⭐️⭐️⭐️</option>
+                    <option value="5">⭐️⭐️⭐️⭐️⭐️</option>
+                  </select>
+                </div>
+                <div className="form-group col-sm-4">
+                  <label htmlFor="rant">Rant?</label>
+                  <input
+                    type="checkbox"
+                    id="rant"
+                    name="rant"
+                    className="form-control"
+                  />
+                </div>
+              </div>
+              <input
+                type="submit"
+                className="btn btn-primary"
+                value="Add Comment"
+              />
+            </form>
           </div>
         </section>
         <div className="comment-foot"></div>

@@ -12,19 +12,6 @@ async function seed() {
       rant: false,
       stars: 5.0,
       content: "Wow, simply amazing! Highly recommended!",
-    },
-    {
-      author: "Hungry Hal",
-      rant: false,
-      stars: 5.0,
-      content: "omg fam that was delish",
-    },
-    {
-      author: "Unhappy Uma",
-      rant: true,
-      stars: 1.0,
-      content:
-        "I asked for no onions and they put onions on my food. I will never go back!",
     }
   )
 
