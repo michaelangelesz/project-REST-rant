@@ -6,7 +6,7 @@ function edit_form(data) {
     <Def title="Edit Restaurant">
       <main>
         <h1>Edit Restaurant</h1>
-        <form method="POST" className="form-container" action={`/places/${data.id}?_method=PUT`}>
+        <form method="POST" className="form-container" action={`/places/${data.place.id}?_method=PUT`}>
           <div className="row">
             <div className="form-group col-sm-6 col-md-6 col-lg-4">
               <label htmlFor="name">Restaurant Name</label>
@@ -54,13 +54,13 @@ function edit_form(data) {
                 <label htmlFor="established">Established</label>
                 <input
                   className="form-control"
-                  id="established"
-                  name="established"
+                  id="founded"
+                  name="founded"
                   pattern="(19|20)\d{2}"
                   title="Please enter a valid year beginning with either 19 or 20"
-                  value={data.place.established}
+                  value={data.place.founded}
                   onChange={(event) => {
-                    data.place.established = event.target.value
+                    data.place.founded = event.target.value
                   }}
                   required
                 />

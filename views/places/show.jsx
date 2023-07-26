@@ -64,7 +64,7 @@ function show(data) {
         </div>
         <div className="edits">
           <a
-            href={`/places/${data.id}/edit`}
+            href={`/places/${data.place.id}/edit`}
             className="btn btn-warning"
             style={{ display: "inline-block" }}
           >
@@ -86,7 +86,7 @@ function show(data) {
           </a>
           <form
             method="POST"
-            action={`/places/${data.id}?_method=DELETE`}
+            action={`/places/${data.place.id}?_method=DELETE`}
             style={{ display: "inline-block" }}
           >
             <button type="submit" className="btn btn-danger">
