@@ -40,11 +40,11 @@ router.get("/:id", (req, res) => {
   db.Place.findById(req.params.id)
     .populate("comments")
     .then((place) => {
-      console.log(place.comments)
+      // console.log(place.comments)
       res.render("places/show", { place })
     })
     .catch((err) => {
-      console.log("err", err)
+      // console.log("err", err)
       res.render("error404")
     })
 })
@@ -62,7 +62,7 @@ router.get("/:id/edit", (req, res) => {
 })
 
 router.post("/:id/comment", (req, res) => {
-  console.log("post comment", req.body)
+  // console.log("post comment", req.body)
   if (req.body.author === "") {
     req.body.author = undefined
   }
@@ -93,11 +93,11 @@ router.post("/:id/comment", (req, res) => {
 router.delete("/:id/comment/:commentId", (req, res) => {
   db.Comment.findByIdAndDelete(req.params.commentId)
     .then(() => {
-      console.log("Success")
+      // console.log("Success")
       res.redirect(`/places/${req.params.id}`)
     })
     .catch((err) => {
-      console.log("err", err)
+      // console.log("err", err)
       res.render("error404")
     })
 })

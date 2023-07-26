@@ -5,6 +5,11 @@ function show(data) {
   let comments = <p className="inactive">No comments yet!</p>
   let rating = <p className="inactive2">No ratings yet!</p>
   if (data.place.comments.length) {
+    let sumRatings = data.place.comments.reduce((tot, c) => {
+      return tot + c.stars
+    }, 0)
+    let averageRating = sumRatings / data.place.comments.length
+    rating = <p>{Math.round(averageRating)} stars</p>
     comments = data.place.comments.map((c) => {
       return (
         <div className="border">
@@ -92,7 +97,7 @@ function show(data) {
           </form>
         </div>
         <section className="comments-section bg-dark text-light py-5">
-          <div className="container">
+          <div className="container2">
             <h2 className="comments-heading text-center mb-4">Comments</h2>
             {comments}
             <hr />
@@ -106,33 +111,38 @@ function show(data) {
                     id="content"
                     name="content"
                     className="form-control"
+                    required={true}
                   ></textarea>
                 </div>
               </div>
               <div className="row">
                 <div className="form-group col-sm-6">
                   <label htmlFor="author">Author</label>
-                  <input id="author" name="author" className="form-control" />
+                  <input
+                    id="author"
+                    name="author"
+                    className="form-control"
+                    required={true}
+                  />
                 </div>
                 <div className="form-group col-sm-6">
                   <label htmlFor="stars">Star Rating</label>
-                  <select className="form-control" id="stars" name="stars">
-                    <option value="0">Select a rating</option>
-                    <option value="1">⭐️</option>
-                    <option value="2">⭐️⭐️</option>
-                    <option value="3">⭐️⭐️⭐️</option>
-                    <option value="4">⭐️⭐️⭐️⭐️</option>
-                    <option value="5">⭐️⭐️⭐️⭐️⭐️</option>
-                  </select>
+                  <input type="range" step="0.5" min="1" max="5" id="stars" name="stars" className="form-control my-stars" />
                 </div>
-                <div className="form-group col-sm-4">
-                  <label htmlFor="rant">Rant?</label>
-                  <input
-                    type="checkbox"
-                    id="rant"
-                    name="rant"
-                    className="form-control"
-                  />
+              </div>
+              <div className="row">
+                <div className="form-group col-sm-6">
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <label htmlFor="rant" style={{ marginRight: "0.5rem" }}>
+                      Is this a Rant?{" "}
+                    </label>
+                    <input
+                      type="checkbox"
+                      id="rant"
+                      name="rant"
+                      className="form-control"
+                    />
+                  </div>
                 </div>
               </div>
               <input

@@ -75,7 +75,7 @@ p {
   font-family: Arial, Helvetica, sans-serif !important;
   color: rgb(73, 26, 26);
   font-weight: normal;
-  font-size: .75em;
+  font-size: .9em !important;
   line-height: 1em;
 }
 
@@ -147,6 +147,7 @@ form {
 
 .row {
   margin: 1em;
+  text-align: center;
 }
 
 .form-control {
@@ -260,6 +261,7 @@ body {
   background: linear-gradient(to top, rgb(73, 26, 26), rgb(73, 26, 26) 90%, rgba(73, 26, 26, 0));
   color: antiquewhite !important;
   font-size: 1em;
+  font-family: Papyrus, fantasy !important;
 }
 
 .sticky-footer a {
@@ -360,4 +362,52 @@ body {
 .comment-foot {
   background-color: rgb(73, 26, 26);
   height: 5em;
+}
+
+input[type="checkbox"]#rant {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="checkbox"]#rant:checked {
+  background-color: #007bff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23fff' d='M5.5 11.5L2 8l1.5-1.5L5.5 8l7-7L14 2.5z'/%3E%3C/svg%3E");
+}
+
+.container2 {
+  background-image: antiquewhite;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.my-stars {
+  background-color: rgb(95, 91, 91) !important;
+}
+
+input[type="range"]#stars {
+  -webkit-appearance: none; /* Remove the default appearance */
+  appearance: none; /* Define standard property for compatibility */
+  width: 100%;
+  height: 2.6em;
+  background-size: 100% 2px;
+  background-repeat: no-repeat;
+  outline: none;
+}
+
+input[type="range"]#stars::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove the default appearance */
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url('/favicons/star-2768.png'); /* Replace the default thumb with a star icon */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
