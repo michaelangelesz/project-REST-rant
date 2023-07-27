@@ -8,6 +8,29 @@ body {
   background-color: antiquewhite;
 }
 
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(12, 97, 26);
+  padding-top: 1rem;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3, h4 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif !important;
+  color: rgb(73, 26, 26);
+  font-weight: normal;
+  font-size: .9em !important;
+  line-height: 1em;
+}
+
 .navbar-brand {
   padding-top: 20px;
   padding-left: 10px;
@@ -62,29 +85,6 @@ body {
 
 .mt-0 {
   margin-top: 0 !important;
-}
-
-h1 {
-  font-size: 3rem;
-  text-align: center;
-  color: rgb(12, 97, 26);
-  padding-top: 1rem;
-}
-
-h2 {
-  font-size: 2em;
-}
-
-h3, h4 {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-p {
-  font-family: Arial, Helvetica, sans-serif !important;
-  color: rgb(73, 26, 26);
-  font-weight: normal;
-  font-size: .9em !important;
-  line-height: 1em;
 }
 
 a:link {
