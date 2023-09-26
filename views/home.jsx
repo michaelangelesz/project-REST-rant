@@ -1,7 +1,7 @@
 const React = require("react")
 const Def = require("./default")
 
-function home() {
+function Home() {
   return (
     <Def title="REST-Rant Home">
       <main>
@@ -41,4 +41,4 @@ function home() {
   )
 }
 
-module.exports = home
+module.exports = Home
